@@ -28,7 +28,7 @@ const Signup = ({ setLoggedUser, setIsLoggedIn }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("signup handleSubmit");
+    // console.log("signup handleSubmit");
     // loginFetch goes here and replaces testLogin
     const data = await signupFetch(username, email, password);
 
