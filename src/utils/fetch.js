@@ -27,8 +27,8 @@ export const signupFetch = async (username, email, password) => {
 
 export const loginFetch = async (username, password) => {
     try {
-        const response = await fetch("http://localhost:5001/users/logingup", {
-            method: "GET", 
+        const response = await fetch("http://localhost:5001/users/login", {
+            method: "POST", 
             mode: "cors",
             headers: {
                 "Content-Type": "application/json",

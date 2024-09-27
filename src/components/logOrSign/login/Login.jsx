@@ -25,11 +25,11 @@ const Login = ({ setLoggedUser, setIsLoggedIn }) => {
     };
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log("login handleSubmit");
     // loginFetch goes here and replaces testLogin
-    const data = testLogin(username, password);
+    const data = await loginFetch (username, password);
     // setLoggedUser
     setLoggedUser(data);
     // setIsLoggedIn
